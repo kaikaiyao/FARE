@@ -1,0 +1,4 @@
+extends: fare.yaml
+method: fare
+use_constrained_conv: false
+

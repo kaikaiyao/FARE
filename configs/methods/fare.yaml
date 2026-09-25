@@ -1,0 +1,46 @@
+method: fare
+device: auto
+patch_size: 32
+top_k: 10
+batch_size: 32
+optimizer: adamw
+max_steps: 1000000
+warmup_steps: 2000
+lr: 0.001
+weight_decay: 0.01
+use_constrained_conv: true
+use_adv_positives: true
+use_contradiction_positives: true
+mu_adv: 0.1
+lambda_con: 0.1
+contradiction_transforms:
+  - gaussian_blur
+  - gaussian_noise
+  - jpeg_compress
+  - crop_resize
+adv:
+  radius: 0.03
+  gamma: 1.2
+  steps: 5
+  step_size: 0.005
+transform_params:
+  gaussian_blur:
+    sigma: 1.0
+    kernel_size: 5
+  gaussian_noise:
+    sigma: 0.00784313725490196
+  jpeg_compress:
+    quality: 75
+  crop_resize:
+    keep_area: 0.9
+attack:
+  epsilon: 0.025
+  steps: 50
+  step_size: 0.001
+  random_restarts: 5
+  early_stop: true
+  lpips_max: 0.05
+batch_sizes:
+  - 5
+  - 10
+alpha: 0.01
