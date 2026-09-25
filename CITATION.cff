@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use FARE, please cite the paper below."
+title: "FARE: Forensic Acceptance Region Estimation for Catching Bait-and-Switch Image Generators"
+type: software
+authors:
+  - family-names: Yao
+    given-names: Kai
+  - family-names: Juarez
+    given-names: Marc
+repository-code: "https://github.com/kaikaiyao/FARE"
+url: "https://openreview.net/forum?id=biz1Z9lOtc"
+preferred-citation:
+  type: conference-paper
+  title: "FARE: Forensic Acceptance Region Estimation for Catching Bait-and-Switch Image Generators"
+  authors:
+    - family-names: Yao
+      given-names: Kai
+    - family-names: Juarez
+      given-names: Marc
+  year: 2026
+  conference:
+    name: "Conference on Neural Information Processing Systems (NeurIPS 2026)"
+  url: "https://openreview.net/forum?id=biz1Z9lOtc"
